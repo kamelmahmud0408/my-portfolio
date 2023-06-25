@@ -20,7 +20,7 @@ const Navbar = () => {
         >
             <div className="flex items-center justify-between">
                 <div className="mx-7">
-                    <h4 className="text-4xl uppercase font-bold">
+                    <h4 className="text-4xl uppercase font-bold text-black">
                         Ka<span className="text-cyan-600">me</span>l
                     </h4>
                 </div>
@@ -33,14 +33,18 @@ const Navbar = () => {
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>About</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>Skills</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li>
+                        <li ><button className='btn-primary'><Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'>Download Resume</Link></button></li>
                     </ul>
                 </div>
-                <div
-                    onClick={() => setOpen(!open)}
-                    className={`z-[999]  ${open ? "text-gray-900" : "text-gray-100"
-                        } text-3xl md:hidden m-5`}
-                >
-                    <ion-icon name="menu"></ion-icon>
+                <div className='flex items-center md:hidden '>
+                    <Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'><button className='bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2'>Resume</button></Link>
+                    <div
+                        onClick={() => setOpen(!open)}
+                        className={`z-[999]  ${open ? "text-gray-900" : "text-black"
+                            } text-3xl md:hidden m-5`}
+                    >
+                        <ion-icon name="menu"></ion-icon>
+                    </div>
                 </div>
                 <div
                     className={`md:hidden text-gray-900 absolute w-2/3 h-screen
