@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
     const [sticky, setSticky] = useState(false);
-  const [open, setOpen] = useState(false);
-  const menuLinks = [
-    { name: "HOME", link: "#home" },
-    { name: "ABOUT", link: "#about" },
-    { name: "SKILLS", link: "#skills" },
-    { name: "PROJECTS", link: "#projects" },
-    { name: "CONTACT", link: "#contact" },
-  ];
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
-      window.scrollY > 0 ? setSticky(true) : setSticky(false);
-    });
-  }, []);
+    const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            window.scrollY > 0 ? setSticky(true) : setSticky(false);
+        });
+    }, []);
 
     return (
         <nav
@@ -26,7 +21,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between">
                 <div className="mx-7">
                     <h4 className="text-4xl uppercase font-bold">
-                        Ka<span className="text-cyan-600">me</span>l
+                        A<span className="text-cyan-600">le</span>x
                     </h4>
                 </div>
                 <div
@@ -34,11 +29,10 @@ const Navbar = () => {
                         } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
                 >
                     <ul className="flex items-center gap-1 py-2 text-lg">
-                        {menuLinks?.map((menu, i) => (
-                            <li key={i} className="px-6 hover:text-cyan-600">
-                                <a href={menu?.link}>{menu?.name}</a>
-                            </li>
-                        ))}
+                        <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
+                        <li className="px-6 hover:text-cyan-600"><Link to='/'>About</Link></li>
+                        <li className="px-6 hover:text-cyan-600"><Link to='/'>Skills</Link></li>
+                        <li className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li>
                     </ul>
                 </div>
                 <div
@@ -53,16 +47,12 @@ const Navbar = () => {
         px-7 py-2 font-medium bg-white top-0 duration-300 ${open ? "right-0" : "right-[-100%]"
                         }`}
                 >
-                    <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
-                        {menuLinks?.map((menu, i) => (
-                            <li
-                                onClick={() => setOpen(false)}
-                                key={i}
-                                className="px-6 hover:text-cyan-600"
-                            >
-                                <a href={menu?.link}>{menu?.name}</a>
-                            </li>
-                        ))}
+                    <ul className="flex flex-col  h-full gap-10 py-2 text-lg">
+
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>About</Link></li>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Skills</Link></li>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li>
                     </ul>
                 </div>
             </div>

@@ -1,9 +1,10 @@
 import React from 'react';
+import Bot from '../Bot/Bot';
 
 const Home = () => {
     return (
         <div>
-            this is home
+            <Bot></Bot>
         </div>
     );
 };
