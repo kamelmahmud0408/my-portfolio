@@ -3,7 +3,7 @@ import kamel from '../../../assets/images/kamel_fb-removebg-preview.png'
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
-    
+
     return (
         <section
             id="home"
@@ -24,12 +24,15 @@ const Banner = () => {
                     <h4 className="md:text-2xl text-lg md:leading-normal leading-5  font-bold text-gray-600">
                         Fullstack Developer
                     </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa nulla repellendus non deserunt, totam aliquam, hic sapiente voluptatum sequi rerum temporibus ea! Fuga maiores quisquam mollitia natus, impedit aspernatur autem quae nesciunt ipsam velit sit laudantium magni praesentium enim voluptas expedita error voluptate nobis deleniti possimus laborum repudiandae. Consectetur, omnis ea explicabo doloribus voluptatibus blanditiis eius deleniti voluptas praesentium iusto molestiae numquam non earum magnam est ipsa ducimus, vero impedit consequuntur! Eum incidunt corrupti ipsam ullam atque nobis, tempora perferendis ab nostrum, praesentium eius quam laudantium. Officia, doloribus magnam? A quos consectetur atque voluptates saepe et deleniti! Expedita, quos!</p>
+                    <p>As a passionate Junior Web Developer, I am committed to embracing the challenges of today's rapidly evolving
+                        industry. I aim to utilize my comprehensive knowledge, skills, and experience to drive innovation and bring
+                        creative ideas to fruition. I am eager to expand my skill set and explore emerging technologies, enabling me to
+                        contribute to cutting-edge web development projects and make a significant impact in the field.</p>
                     <button className="btn-primary  mt-8">Contact Me</button>
                     <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-                    <Link className="text-gray-600 hover:text-white" to='https://www.facebook.com/profile.php?id=100012791623777'><ion-icon  name='logo-facebook'></ion-icon></Link>
-                    <Link className="text-gray-600 hover:text-white  " to='https://www.linkedin.com/in/mahmudul-hasan-kamel/'><ion-icon name='logo-linkedin'></ion-icon></Link>
-                    <Link className="text-gray-600 hover:text-white  " to='https://github.com/kamelmahmud0408'><ion-icon name='logo-github'></ion-icon></Link>
+                        <Link className="text-gray-600 hover:text-white" to='https://www.facebook.com/profile.php?id=100012791623777'><ion-icon name='logo-facebook'></ion-icon></Link>
+                        <Link className="text-gray-600 hover:text-white  " to='https://www.linkedin.com/in/mahmudul-hasan-kamel/'><ion-icon name='logo-linkedin'></ion-icon></Link>
+                        <Link className="text-gray-600 hover:text-white  " to='https://github.com/kamelmahmud0408'><ion-icon name='logo-github'></ion-icon></Link>
                     </div>
                 </div>
             </div>
