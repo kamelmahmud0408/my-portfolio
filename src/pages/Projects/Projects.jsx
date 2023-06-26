@@ -3,6 +3,7 @@ import project1 from '../../assets/images/eliteSports.jpg';
 import project2 from '../../assets/images/toysmart.jpg';
 import project3 from '../../assets/images/bistro.jpg';
 import project4 from '../../assets/images/foodstation.jpg';
+import Bot from '../Home/Bot/Bot';
 
 const Projects = () => {
 
@@ -40,6 +41,7 @@ const Projects = () => {
 
     return (
         <section id="projects" className="py-10 text-white mt-20">
+            <Bot></Bot>
             <div className="text-center">
                 <h3 className="text-4xl font-bold text-black">
                     My <span className="text-cyan-600">Projects</span>
@@ -48,7 +50,7 @@ const Projects = () => {
             </div>
             <br />
 
-            <div className="w-[90%] mx-auto">
+            <div className=" w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -75,7 +77,7 @@ const Projects = () => {
                                 <a
                                     href='https://summer-camp-school-b31df.web.app/'
                                     target="_blank"
-                                    className=" btn-primary"
+                                    className="btn-primary"
                                 >
                                     Live Demo
                                 </a>
@@ -101,7 +103,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-[90%] mx-auto">
+            <div className="w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -154,7 +156,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-[90%] mx-auto">
+            <div className="w-full lg:w-[90%]mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -207,7 +209,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-[90%] mx-auto">
+            <div className="w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">

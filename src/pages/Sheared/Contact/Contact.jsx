@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE, form.current,import.meta.env.VITE_PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                form.current.reset();
+                toast.success('Message sent successfully');
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     const contact_info = [
         { logo: "mail", text: "mahmudulhasankamel1994@gmail.com" },
         { logo: "logo-whatsapp", text: "+8801516051320" },
         {
-          logo: "location",
-          text: "Dhaka, Bangladesh",
+            logo: "location",
+            text: "Dhaka, Bangladesh",
         },
-      ];
+    ];
     return (
         <section id="contact" className="py-10 px-3 ">
+            <ToastContainer />
             <div className="text-center mt-8">
                 <h3 className="text-4xl font-semibold text-black">
                     Contact <span className="text-cyan-600">Me</span>
@@ -21,11 +40,11 @@ const Contact = () => {
                     className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl  md:p-6 p-2 rounded-lg mx-auto"
                 >
-                    <form className="flex flex-col flex-1 gap-5 text-black">
-                        <input  type="text" placeholder="Your Name" />
-                        <input type="Email" placeholder="Your Email Address" />
-                        <textarea placeholder="Your Message" rows={10}></textarea>
-                        <button className="btn-primary w-fit">Send Message</button>
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col flex-1 gap-5 text-black">
+                        <input type="text" name="user_name" placeholder="Your Name" />
+                        <input type="Email" name="user_email" placeholder="Your Email Address" />
+                        <textarea name="message" placeholder="Your Message" rows={10}></textarea>
+                        <input className="btn-primary w-fit" type="submit" value='Send' />
                     </form>
                     <div className="flex flex-col  gap-7 ">
                         {contact_info.map((contact, i) => (
