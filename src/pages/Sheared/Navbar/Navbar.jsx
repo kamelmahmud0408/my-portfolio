@@ -6,6 +6,14 @@ const Navbar = () => {
     const [sticky, setSticky] = useState(false);
     const [open, setOpen] = useState(false);
 
+    const menuLinks = [
+        { name: "HOME", link: "#home" },
+        { name: "ABOUT", link: "#about" },
+        { name: "SKILLS", link: "#skills" },
+        { name: "PROJECTS", link: "#projects" },
+        { name: "CONTACT", link: "#contact" },
+    ];
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             const nav = document.querySelector("nav");
@@ -29,10 +37,16 @@ const Navbar = () => {
                         } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
                 >
                     <ul className="flex items-center gap-1 py-2 text-lg">
-                        <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
+                        {/* <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>About</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/#skills'>Skills</Link></li>
-                        <li className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li>
+                        <li className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
+                        <li ><button className='btn-primary'><Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'>Download Resume</Link></button></li> */}
+                        {menuLinks?.map((menu, i) => (
+                            <li key={i} className="px-6 hover:text-cyan-600">
+                                <a href={menu?.link}>{menu?.name}</a>
+                            </li>
+                        ))}
                         <li ><button className='btn-primary'><Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'>Download Resume</Link></button></li>
                     </ul>
                 </div>
@@ -52,11 +66,20 @@ const Navbar = () => {
                         }`}
                 >
                     <ul className="flex flex-col  h-full gap-10 py-2 text-lg">
-
+                        {/* 
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>About</Link></li>
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Skills</Link></li>
-                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Projects</Link></li> */}
+                        {menuLinks?.map((menu, i) => (
+                            <li
+                                onClick={() => setOpen(false)}
+                                key={i}
+                                className="px-6 hover:text-cyan-600"
+                            >
+                                <a href={menu?.link}>{menu?.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
