@@ -5,20 +5,20 @@ import Contact from '../../Sheared/Contact/Contact';
 import HireMe from '../HireMe/HireMe';
 import Skills from '../Skills/Skills';
 import Project from '../Project/Project';
-
-
+import About from '../About/About';
 
 const Home = () => {
+
     return (
         <div>
-           
             <Bot></Bot>
             <Banner></Banner>
-            <Skills></Skills>
-            <Project></Project>
+            <About></About>
+            <Skills ></Skills>
+            <Project ></Project>
             <HireMe></HireMe>
-            <Contact></Contact>
-            
+            <Contact ></Contact>
+
         </div>
     );
 };
