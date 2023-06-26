@@ -1,7 +1,8 @@
 import React from 'react';
 import tailimg from '../../../assets/images/Tailwind_CSS_Logo.svg.png'
 import htmlimg from '../../../assets/images/html.png'
-import cssimg from '../../../assets/images/css3.png'
+import cssimg from '../../../assets/images/cssicon.webp'
+import jsimg from '../../../assets/images/jsicon.png'
 
 const Skills = () => {
     const skills = [
@@ -12,13 +13,13 @@ const Skills = () => {
           count: 86,
         },
         {
-            logo: `${cssimg}`,
+          logo: `${cssimg}`,
           name: "CSS3",
           level: "Expect",
           count: 90,
         },
         {
-          logo: "logo-javascript",
+          logo: `${jsimg}`,
           name: "Javascript",
           level: "Intermediate",
           count: 70,
@@ -70,9 +71,9 @@ const Skills = () => {
     return (
         <section id="skills" className="py-10 bg-gray-300 relative">
             <div className="mt-8 text-gray-100 text-center">
-                <h3 className="text-4xl font-semibold text-black">
+               <a href="/#skills"> <h3 className="text-4xl font-semibold text-black">
                     My <span className="text-cyan-600">Skills</span>
-                </h3>
+                </h3></a>
                 <p className="text-gray-700 mt-3 text-lg">My knowledge</p>
                 <div className="flex items-center justify-center mt-12 gap-10 flex-wrap ">
                     {skills?.map((skill, i) => (
