@@ -4,40 +4,47 @@ import project2 from '../../assets/images/toysmart.jpg';
 import project3 from '../../assets/images/bistro.jpg';
 import project4 from '../../assets/images/foodstation.jpg';
 import Bot from '../Home/Bot/Bot';
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    duration: 2200,
+})
 
 const Projects = () => {
 
-    const projects = [
-        {
-            img: project1,
-            name: "EliteSports Academy",
-            github_Client: "https://github.com/kamelmahmud0408/summer-camp-school-client",
-            github_Server: "https://github.com/kamelmahmud0408/summer-camp-school-server",
-            live_link: "https://summer-camp-school-b31df.web.app/",
-        },
-        {
-            img: project2,
-            name: "Toys Mart",
-            github_Client: "https://github.com/kamelmahmud0408/baby-toys-marketplace-client",
-            github_Server: "https://github.com/kamelmahmud0408/baby-toys-marketplace-server",
-            live_link: "https://baby-toys-marketlace.web.app/",
-        },
-        {
-            img: project3,
-            name: "Bistro Boss",
-            github_Client: "https://github.com/kamelmahmud0408/bistro-boss-restaurent",
-            github_Server: "https://github.com/kamelmahmud0408/bistro-boss-restaurent-server",
-            live_link: "https://bistro-boss-restaurent-a8cdb.web.app/",
-        },
-        {
-            img: project4,
-            name: "Food Station",
-            github_Client: "https://github.com/kamelmahmud0408/chef-recipe-client",
-            github_Server: "https://github.com/kamelmahmud0408/the-dragon-server",
-            live_link: "https://the-chef-zone-client.web.app/",
-        },
+    // const projects = [
+    //     {
+    //         img: project1,
+    //         name: "EliteSports Academy",
+    //         github_Client: "https://github.com/kamelmahmud0408/summer-camp-school-client",
+    //         github_Server: "https://github.com/kamelmahmud0408/summer-camp-school-server",
+    //         live_link: "https://summer-camp-school-b31df.web.app/",
+    //     },
+    //     {
+    //         img: project2,
+    //         name: "Toys Mart",
+    //         github_Client: "https://github.com/kamelmahmud0408/baby-toys-marketplace-client",
+    //         github_Server: "https://github.com/kamelmahmud0408/baby-toys-marketplace-server",
+    //         live_link: "https://baby-toys-marketlace.web.app/",
+    //     },
+    //     {
+    //         img: project3,
+    //         name: "Bistro Boss",
+    //         github_Client: "https://github.com/kamelmahmud0408/bistro-boss-restaurent",
+    //         github_Server: "https://github.com/kamelmahmud0408/bistro-boss-restaurent-server",
+    //         live_link: "https://bistro-boss-restaurent-a8cdb.web.app/",
+    //     },
+    //     {
+    //         img: project4,
+    //         name: "Food Station",
+    //         github_Client: "https://github.com/kamelmahmud0408/chef-recipe-client",
+    //         github_Server: "https://github.com/kamelmahmud0408/the-dragon-server",
+    //         live_link: "https://the-chef-zone-client.web.app/",
+    //     },
 
-    ];
+    // ];
 
     return (
         <section id="projects" className="py-10 text-white mt-20">
@@ -50,7 +57,7 @@ const Projects = () => {
             </div>
             <br />
 
-            <div className=" w-full lg:w-[90%] mx-auto">
+            <div data-aos="fade-down" className=" w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -74,27 +81,27 @@ const Projects = () => {
                                 <p>React, TailWind CSS, ExpressJS, NodeJs,  MongoDB, Firebase, Stripe,</p>
                             </div>
                             <div className="flex gap-3 ">
-                                <a
-                                    href='https://summer-camp-school-b31df.web.app/'
+                                <Link
+                                    to='https://summer-camp-school-b31df.web.app/'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Live Demo
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/summer-camp-school-client'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/summer-camp-school-client'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Client
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/summer-camp-school-server'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/summer-camp-school-server'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Server
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
@@ -103,7 +110,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-full lg:w-[90%] mx-auto">
+            <div data-aos="fade-down" className="w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -127,27 +134,27 @@ const Projects = () => {
                                 <p>React, TailWind CSS, ExpressJS, NodeJs,  MongoDB, Firebase,</p>
                             </div>
                             <div className="flex gap-3 ">
-                                <a
-                                    href='https://baby-toys-marketlace.web.app/'
+                                <Link
+                                    to='https://baby-toys-marketlace.web.app/'
                                     target="_blank"
                                     className=" btn-primary"
                                 >
                                     Live Demo
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/baby-toys-marketplace-client'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/baby-toys-marketplace-client'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Client
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/baby-toys-marketplace-server'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/baby-toys-marketplace-server'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Server
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
@@ -156,7 +163,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-full lg:w-[90%]mx-auto">
+            <div data-aos="fade-down" className="w-full lg:w-[90%]mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -180,27 +187,27 @@ const Projects = () => {
                                 <p>React, TailWind CSS, ExpressJS, NodeJs,  MongoDB, Firebase, Stripe</p>
                             </div>
                             <div className="flex gap-3 ">
-                                <a
-                                    href='https://bistro-boss-restaurent-a8cdb.web.app/'
+                                <Link
+                                    to='https://bistro-boss-restaurent-a8cdb.web.app/'
                                     target="_blank"
                                     className=" btn-primary"
                                 >
                                     Live Demo
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/bistro-boss-restaurent'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/bistro-boss-restaurent'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Client
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/the-dragon-server'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/the-dragon-server'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Server
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
@@ -209,7 +216,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div className="w-full lg:w-[90%] mx-auto">
+            <div data-aos="fade-down" className="w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -228,27 +235,27 @@ const Projects = () => {
                                 <p>React, TailWind CSS, ExpressJS, Firebase, </p>
                             </div>
                             <div className="flex gap-3 ">
-                                <a
-                                    href='https://the-chef-zone-client.web.app/'
+                                <Link
+                                    to='https://the-chef-zone-client.web.app/'
                                     target="_blank"
                                     className=" btn-primary"
                                 >
                                     Live Demo
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/chef-recipe-client'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/chef-recipe-client'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Client
-                                </a>
-                                <a
-                                    href='https://github.com/kamelmahmud0408/the-dragon-server'
+                                </Link>
+                                <Link
+                                    to='https://github.com/kamelmahmud0408/the-dragon-server'
                                     target="_blank"
                                     className="btn-primary"
                                 >
                                     Github_Server
-                                </a>
+                                </Link>
 
                             </div>
                         </div>

@@ -20,10 +20,8 @@ const About = () => {
           <div className="p-2">
             <div className="text-black my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+              I am a Junior Web Developer with a passion for web development and a strong commitment to embracing the challenges of today's rapidly evolving industry. I have a comprehensive knowledge of HTML5, CSS3, JavaScript (ES6+), React JS, API Integration, Tailwind CSS, and MongoDB. I am also comfortable working with technologies such as Firebase, REST APIs, Express JS, and JWT. Additionally, I have familiarity with Node JS and Material UI.
+              I have worked on several projects that showcase my skills and expertise
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

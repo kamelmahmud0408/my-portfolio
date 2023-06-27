@@ -6,18 +6,37 @@ import HireMe from '../HireMe/HireMe';
 import Skills from '../Skills/Skills';
 import Project from '../Project/Project';
 import About from '../About/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    duration: 2200,
+});
 
 const Home = () => {
 
     return (
         <div>
             <Bot></Bot>
-            <Banner></Banner>
-            <About></About>
-            <Skills ></Skills>
-            <Project ></Project>
-            <HireMe></HireMe>
-            <Contact ></Contact>
+            <div data-aos="fade-down">
+                <Banner></Banner>
+            </div>
+            <div data-aos="fade-down">
+                <About></About>
+            </div>
+
+            <div data-aos="fade-down">
+                <Skills ></Skills>
+            </div>
+            <div data-aos="fade-down">
+                <Project></Project>
+            </div>
+            <div data-aos="fade-down">
+                <HireMe></HireMe>
+            </div>
+            <div data-aos="fade-down">
+                <Contact ></Contact>
+            </div>
 
         </div>
     );

@@ -3,6 +3,13 @@ import tailimg from '../../../assets/images/Tailwind_CSS_Logo.svg.png'
 import htmlimg from '../../../assets/images/html.png'
 import cssimg from '../../../assets/images/cssicon.webp'
 import jsimg from '../../../assets/images/jsicon.png'
+import reactimg from '../../../assets/images/reacticon.jpg'
+import boostrapimg from '../../../assets/images/bootstrap.jpg'
+import nodejsimg from '../../../assets/images/nodejs.jpg'
+import expressjsimg from '../../../assets/images/expressjs.jpg'
+import mongodbjsimg from '../../../assets/images/MongoDB.jpg'
+import firebasesimg from '../../../assets/images/expressjs.jpg'
+
 
 const Skills = () => {
     const skills = [
@@ -10,12 +17,12 @@ const Skills = () => {
           logo: `${htmlimg}`,
           name: "HTML5",
           level: "Advance",
-          count: 86,
+          count: 90,
         },
         {
           logo: `${cssimg}`,
           name: "CSS3",
-          level: "Expect",
+          level: "Advance",
           count: 90,
         },
         {
@@ -25,46 +32,46 @@ const Skills = () => {
           count: 70,
         },
         {
-          logo: "logo-react",
+          logo: `${reactimg}`,
           name: "ReactJS",
           level: "Intermediate",
-          count: 80,
+          count: 86,
         },
         {
-            logo: "logo-nodejs",
+          logo: `${nodejsimg}`,
             name: "NodeJs",
-            level: "Intermediate",
+            level: "Bigginer",
             count: 50,
           },
           {
-            logo: "logo-bootstrap",
-            name: "ReactJS",
+            logo: `${expressjsimg}`,
+            name: "ExpressJs",
             level: "Intermediate",
-            count: 80,
+            count: 70,
           },
           {
-            logo: "logo-react",
-            name: "ReactJS",
-            level: "Intermediate",
-            count: 80,
+            logo: `${boostrapimg}`,
+            name: "Boostrap",
+            level: "Advance",
+            count: 90,
           },
           {
             logo: `${tailimg}`,
-            name: "Tawiljhh",
-            level: "Intermediate",
-            count: 80,
+            name: "Tailwind",
+            level: "Advance",
+            count: 90,
           },
           {
-            logo: "logo-react",
-            name: "ReactJS",
+            logo: `${mongodbjsimg}`,
+            name: "MongoDB",
             level: "Intermediate",
-            count: 80,
+            count: 75,
           },
           {
-            logo: "logo-react",
-            name: "ReactJS",
-            level: "Intermediate",
-            count: 80,
+            logo: `${firebasesimg}`,
+            name: "Firebase",
+            level: "Bigginer",
+            count: 54,
           },
              
       ];
