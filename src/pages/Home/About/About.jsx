@@ -37,7 +37,7 @@ const About = () => {
               <br />
               <br />
               <a href={resume} download>
-                <button className="btn-primary">Download CV</button>
+                <button className="btn-primary">Download Resume <ion-icon name="arrow-down-outline"></ion-icon></button>
               </a>
             </div>
           </div>

@@ -19,20 +19,20 @@ const Banner = () => {
                             Hello!
                             <br />
                         </span>
-                        My Name is <span>Mahmudul Hasan Kamel</span>
+                        My Name is <span className='text-cyan-600 '>Mahmudul Hasan Kamel</span>
                     </h1>
-                    <h4 className="md:text-2xl text-lg md:leading-normal leading-5  font-bold text-gray-600">
-                        Fullstack Developer
+                    <h4 className="md:text-2xl text-lg md:leading-normal leading-5  font-bold text-gray-800 mb-3">
+                        Junior Web Developer
                     </h4>
                     <p className='text-justify'>As a passionate Junior Web Developer, I am committed to embracing the challenges of today's rapidly evolving
                         industry. I aim to utilize my comprehensive knowledge, skills, and experience to drive innovation and bring
                         creative ideas to fruition. I am eager to expand my skill set and explore emerging technologies, enabling me to
                         contribute to cutting-edge web development projects and make a significant impact in the field.</p>
-                    <button className="btn-primary  mt-8">Contact Me</button>
+                    <button className="btn-primary  mt-8">Contact Me <ion-icon name="arrow-down-outline"></ion-icon></button>
                     <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-                        <Link className="text-gray-600 hover:text-white" to='https://www.facebook.com/profile.php?id=100012791623777'><ion-icon name='logo-facebook'></ion-icon></Link>
-                        <Link className="text-gray-600 hover:text-white  " to='https://www.linkedin.com/in/mahmudul-hasan-kamel/'><ion-icon name='logo-linkedin'></ion-icon></Link>
-                        <Link className="text-gray-600 hover:text-white  " to='https://github.com/kamelmahmud0408'><ion-icon name='logo-github'></ion-icon></Link>
+                        <Link className="text-cyan-600 hover:text-white" to='https://www.facebook.com/profile.php?id=100012791623777'><ion-icon name='logo-facebook'></ion-icon></Link>
+                        <Link className="text-cyan-600 hover:text-white  " to='https://www.linkedin.com/in/mahmudul-hasan-kamel/'><ion-icon name='logo-linkedin'></ion-icon></Link>
+                        <Link className="text-cyan-600 hover:text-white  " to='https://github.com/kamelmahmud0408'><ion-icon name='logo-github'></ion-icon></Link>
                     </div>
                 </div>
             </div>

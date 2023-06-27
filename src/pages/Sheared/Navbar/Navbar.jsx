@@ -34,7 +34,7 @@ const Navbar = () => {
                         <li className="px-6 hover:text-cyan-600"><Link to='/skills'>Skills</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/contact'>Contact</Link></li>
-                        <li ><button className='btn-primary'><Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'>Download Resume</Link></button></li>
+                        <li className='items-center'><button className='btn-primary '><Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'>Download Resume </Link></button></li>
                         
                     </ul>
                 </div>

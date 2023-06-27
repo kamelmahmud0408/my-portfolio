@@ -84,21 +84,21 @@ const Projects = () => {
                                 <Link
                                     to='https://summer-camp-school-b31df.web.app/'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Live Demo
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/summer-camp-school-client'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Client
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/summer-camp-school-server'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Server
                                 </Link>
@@ -137,21 +137,21 @@ const Projects = () => {
                                 <Link
                                     to='https://baby-toys-marketlace.web.app/'
                                     target="_blank"
-                                    className=" btn-primary"
+                                    className=" bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Live Demo
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/baby-toys-marketplace-client'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Client
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/baby-toys-marketplace-server'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Server
                                 </Link>
@@ -163,7 +163,7 @@ const Projects = () => {
             
                     <hr className='text-black'  />
             </div> 
-            <div data-aos="fade-down" className="w-full lg:w-[90%]mx-auto">
+            <div data-aos="fade-down" className="w-full lg:w-[90%] mx-auto">
 
                     <div>
                         <div className="h-fit w-full p-4 bg-gray-300 rounded-xl mt-10">
@@ -190,21 +190,21 @@ const Projects = () => {
                                 <Link
                                     to='https://bistro-boss-restaurent-a8cdb.web.app/'
                                     target="_blank"
-                                    className=" btn-primary"
+                                    className=" bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Live Demo
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/bistro-boss-restaurent'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Client
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/the-dragon-server'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Server
                                 </Link>
@@ -238,21 +238,21 @@ const Projects = () => {
                                 <Link
                                     to='https://the-chef-zone-client.web.app/'
                                     target="_blank"
-                                    className=" btn-primary"
+                                    className=" bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Live Demo
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/chef-recipe-client'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Client
                                 </Link>
                                 <Link
                                     to='https://github.com/kamelmahmud0408/the-dragon-server'
                                     target="_blank"
-                                    className="btn-primary"
+                                    className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-3 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                 >
                                     Github_Server
                                 </Link>
