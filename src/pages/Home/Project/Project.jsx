@@ -78,21 +78,21 @@ const Project = () => {
                                     <a
                                         href={project_info.live_link}
                                         target="_blank"
-                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-1 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
+                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 md:py-3 px-2 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                     >
                                         Live Demo
                                     </a>
                                     <a
                                         href={project_info.github_Client}
                                         target="_blank"
-                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-1 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
+                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 md:py-3 px-2 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                     >
                                         Github_Client
                                     </a>
                                     <a
                                         href={project_info.github_Server}
                                         target="_blank"
-                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-1 md:py-3 px-1 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
+                                        className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 md:py-3 px-2 md:px-6 flex items-center gap-2 hover:bg-cyan-300"
                                     >
                                         Github_Server
                                     </a>
