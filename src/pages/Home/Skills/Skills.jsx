@@ -8,7 +8,7 @@ import boostrapimg from '../../../assets/images/bootstrap.jpg'
 import nodejsimg from '../../../assets/images/nodejs.jpg'
 import expressjsimg from '../../../assets/images/expressjs.jpg'
 import mongodbjsimg from '../../../assets/images/MongoDB.jpg'
-import firebasesimg from '../../../assets/images/expressjs.jpg'
+import firebasesimg from '../../../assets/images/firebase.jpg'
 
 
 const Skills = () => {
@@ -40,7 +40,7 @@ const Skills = () => {
         {
           logo: `${nodejsimg}`,
             name: "NodeJs",
-            level: "Bigginer",
+            level: "Begginer",
             count: 50,
           },
           {
@@ -70,7 +70,7 @@ const Skills = () => {
           {
             logo: `${firebasesimg}`,
             name: "Firebase",
-            level: "Bigginer",
+            level: "Begginer",
             count: 54,
           },
              

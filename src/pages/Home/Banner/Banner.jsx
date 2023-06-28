@@ -24,7 +24,7 @@ const Banner = () => {
                     <h4 className="md:text-2xl text-lg md:leading-normal leading-5  font-bold text-gray-800 mb-3">
                         Junior Web Developer
                     </h4>
-                    <p className='text-justify'>As a passionate Junior Web Developer, I am committed to embracing the challenges of today's rapidly evolving
+                    <p className='text-justify w-11/12 mx-auto md:ms-0'>As a passionate Junior Web Developer, I am committed to embracing the challenges of today's rapidly evolving
                         industry. I aim to utilize my comprehensive knowledge, skills, and experience to drive innovation and bring
                         creative ideas to fruition. I am eager to expand my skill set and explore emerging technologies, enabling me to
                         contribute to cutting-edge web development projects and make a significant impact in the field.</p>

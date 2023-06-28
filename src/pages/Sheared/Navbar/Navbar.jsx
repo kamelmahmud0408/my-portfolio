@@ -39,7 +39,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='flex items-center md:hidden '>
-                    <Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'><button className='bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2'>Resume</button></Link>
+                    <Link to='https://drive.google.com/file/d/1w8Da7nmx-eDXiwQkNv87V1cmB4psvMxM/view?usp=drive_link'><button className='bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2'>Resume <ion-icon name="arrow-down-outline"></ion-icon></button></Link>
                     <div
                         onClick={() => setOpen(!open)}
                         className={`z-[999]  ${open ? "text-gray-900" : "text-black"
